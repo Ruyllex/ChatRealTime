@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chat</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Chat in real time</h1>
+        </div>
+        <div class="form">
+            <input class="input" placeholder="User Name" required="" type="text" id="userName"> 
+            <input class="input" placeholder="Type your text" required="" type="text" id="messageInput">
+            <span class="input-border"></span>
+        </div>
+        <button class="send-button" onclick="sendMessage()">Send</button><br/>
+        <div class="chat-box" id="chatOutput"></div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.5.1/sockjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+
+<script src="app.js"></script>
+
+</body>
+</html>
